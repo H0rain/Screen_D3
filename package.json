@@ -1,0 +1,44 @@
+{
+  "name": "ruyi-big-screen",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "test": "vitest",
+    "test:e2e": "playwright test",
+    "screenshot": "npm run screenshot:dashboard",
+    "screenshot:dashboard": "node scripts/capture-dashboard.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "echarts": "^5.5.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.0",
+    "@rushstack/eslint-patch": "^1.16.1",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^8.63.0",
+    "@typescript-eslint/parser": "^8.63.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/test-utils": "^2.4.4",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "jsdom": "^23.2.0",
+    "msw": "^2.1.0",
+    "prettier": "^3.2.4",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.0",
+    "vue-tsc": "^2.0.0"
+  }
+}
