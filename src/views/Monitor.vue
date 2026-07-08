@@ -1,9 +1,9 @@
 <template>
-  <Monitor />
+  <MonitorLayout />
 </template>
 
 <script setup lang="ts">
-import Monitor from '@/views/Monitor.vue'
+import MonitorLayout from '@/layouts/MonitorLayout.vue'
 </script>
 
 <style scoped>
